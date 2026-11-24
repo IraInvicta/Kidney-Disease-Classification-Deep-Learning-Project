@@ -1,5 +1,5 @@
 artifact_uri: file:///C:/Users/Shivani%20J/Desktop/Kidney-Disease-Classification-Deep-Learning-Project/mlruns/0/19513ede65ee4107a403dc284ad12ca8/artifacts
-end_time: null
+end_time: 1795524711606
 entry_point_name: ''
 experiment_id: '0'
 lifecycle_stage: active
@@ -10,6 +10,6 @@ source_name: ''
 source_type: 4
 source_version: ''
 start_time: 1795524657858
-status: 1
+status: 4
 tags: []
 user_id: Shivani J
