@@ -306,3 +306,250 @@ Traceback (most recent call last):
   File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
     from distutils._modified import newer
 ModuleNotFoundError: No module named 'distutils._modified'
+[2026-11-24 18:24:37,064: INFO: stage_04_model_evaluation: *******************]
+[2026-11-24 18:24:37,064: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-11-24 18:24:37,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 18:24:37,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 18:24:37,064: INFO: common: created directory at: artifacts]
+[2026-11-24 18:25:20,763: INFO: common: json file saved at: scores.json]
+[2026-11-24 18:25:20,772: INFO: common: json file saved at: scores.json]
+[2026-11-24 18:25:27,642: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-11-24 18:25:30,695: INFO: builder_impl: Assets written to: C:\Users\SHIVAN~1\AppData\Local\Temp\tmpv6hourq1\model\data\model\assets]
+[2026-11-24 18:26:19,468: ERROR: stage_04_model_evaluation: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 27, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\shivani j\desktop\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 155, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 197, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2026-11-24 18:37:12,983: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2026-11-24 18:37:12,986: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-11-24 18:38:09,964: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2026-11-24 18:38:09,964: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-11-24 18:38:28,869: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 18:38:28] "GET / HTTP/1.1" 200 -]
+[2026-11-24 18:40:34,821: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\shivani j\desktop\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-11-24 18:40:34,855: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 18:40:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-11-24 18:42:45,166: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 18:42:45] "GET / HTTP/1.1" 200 -]
+[2026-11-24 18:43:10,032: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\shivani j\desktop\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-11-24 18:43:10,038: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 18:43:10] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-11-24 18:50:47,171: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2026-11-24 18:50:47,171: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-11-24 18:50:55,645: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 18:50:55] "GET / HTTP/1.1" 200 -]
+[2026-11-24 18:51:22,715: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\shivani j\desktop\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-11-24 18:51:22,797: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 18:51:22] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-11-24 18:55:13,937: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-11-24 18:55:13,946: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 18:55:13,954: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 18:55:13,954: INFO: common: created directory at: artifacts]
+[2026-11-24 18:55:13,963: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-11-24 18:55:13,963: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-11-24 18:55:34,889: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-11-24 18:55:36,082: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-11-24 18:55:36,082: INFO: main: *******************]
+[2026-11-24 18:55:36,082: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-11-24 18:55:36,082: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 18:55:36,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 18:55:36,082: INFO: common: created directory at: artifacts]
+[2026-11-24 18:55:36,082: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-11-24 18:55:36,772: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-11-24 18:55:36,962: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-11-24 18:55:36,963: INFO: main: *******************]
+[2026-11-24 18:55:36,963: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-11-24 18:55:36,965: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 18:55:36,966: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 18:55:36,967: INFO: common: created directory at: artifacts]
+[2026-11-24 18:55:36,967: INFO: common: created directory at: artifacts\training]
+[2026-11-24 18:56:44,191: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-11-24 18:56:44,192: INFO: main: *******************]
+[2026-11-24 18:56:44,192: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-11-24 18:56:44,200: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 18:56:44,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 18:56:44,207: INFO: common: created directory at: artifacts]
+[2026-11-24 18:57:50,928: INFO: common: json file saved at: scores.json]
+[2026-11-24 18:57:50,933: INFO: common: json file saved at: scores.json]
+[2026-11-24 18:57:50,934: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-11-24 19:00:01,275: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2026-11-24 19:00:01,275: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-11-24 19:00:19,899: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:00:19] "GET / HTTP/1.1" 200 -]
+[2026-11-24 19:00:26,070: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\shivani j\desktop\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Shivani J\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-11-24 19:00:26,070: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:00:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-11-24 19:03:38,550: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-11-24 19:03:38,553: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 19:03:38,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 19:03:38,557: INFO: common: created directory at: artifacts]
+[2026-11-24 19:03:38,557: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-11-24 19:03:38,560: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-11-24 19:04:00,798: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-11-24 19:04:02,184: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-11-24 19:04:02,184: INFO: main: *******************]
+[2026-11-24 19:04:02,184: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-11-24 19:04:02,188: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 19:04:02,190: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 19:04:02,190: INFO: common: created directory at: artifacts]
+[2026-11-24 19:04:02,192: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-11-24 19:04:02,561: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-11-24 19:04:02,895: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-11-24 19:04:02,895: INFO: main: *******************]
+[2026-11-24 19:04:02,895: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-11-24 19:04:02,913: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 19:04:02,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 19:04:02,913: INFO: common: created directory at: artifacts]
+[2026-11-24 19:04:02,913: INFO: common: created directory at: artifacts\training]
+[2026-11-24 19:06:47,851: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-11-24 19:06:47,852: INFO: main: *******************]
+[2026-11-24 19:06:47,852: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-11-24 19:06:47,859: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-11-24 19:06:47,864: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-11-24 19:06:47,865: INFO: common: created directory at: artifacts]
+[2026-11-24 19:07:44,871: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.104:8080]
+[2026-11-24 19:07:44,871: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-11-24 19:09:00,218: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:09:00] "GET / HTTP/1.1" 200 -]
+[2026-11-24 19:09:07,349: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:09:07] "POST /predict HTTP/1.1" 200 -]
+[2026-11-24 19:09:20,102: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:09:20] "POST /predict HTTP/1.1" 200 -]
+[2026-11-24 19:09:22,388: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:09:22] "POST /predict HTTP/1.1" 200 -]
+[2026-11-24 19:09:28,805: INFO: _internal: 127.0.0.1 - - [24/Nov/2026 19:09:28] "POST /predict HTTP/1.1" 200 -]
